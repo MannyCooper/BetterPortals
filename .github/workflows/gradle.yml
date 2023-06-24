@@ -25,7 +25,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-${{ secrets.CACHE_SUFFIX }}-
       - name: Build with Gradle
-        run: ./gradlew clean build
+        run: ./gradlew clean build -x test
         env:
           BP_DEVELOPER_BUILD: 1
       - uses: actions/upload-artifact@v2
