@@ -1,4 +1,4 @@
-name: Java CI
+name: Java CI 1.20
 
 on: [push]
 
